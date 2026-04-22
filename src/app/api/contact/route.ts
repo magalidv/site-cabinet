@@ -1,9 +1,25 @@
-import { NextResponse } from "next/server";
+import { Resend } from "resend";
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: Request) {
-  const body = await req.json();
+  const { name, company, message } = await req.json();
 
-  console.log("Formulaire reçu :", body);
+  try {
+    await resend.emails.send({
+      from: "onboarding@resend.dev", // temporaire
+      to: "tonemail@gmail.com",      // ton email
+      subject: "Nouvelle demande de devis",
+      html: `
+        <h2>Nouveau message</h2>
+        <p><strong>Nom :</strong> ${name}</p>
+        <p><strong>Entreprise :</strong> ${company}</p>
+        <p><strong>Message :</strong><br/> ${message}</p>
+      `,
+    });
 
-  return Response.json({ success: true });
+    return Response.json({ success: true });
+  } catch (error) {
+    return Response.json({ error });
+  }
 }
