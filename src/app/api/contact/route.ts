@@ -1,9 +1,9 @@
 import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {
-  const data = await req.json();
+  const body = await req.json();
 
-  console.log("Contact:", data);
+  console.log("Formulaire reçu :", body);
 
-  return NextResponse.json({ success: true });
+  return Response.json({ success: true });
 }

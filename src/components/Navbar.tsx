@@ -2,17 +2,26 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import Image from "next/image";
+
 
 export default function Navbar() {
   const [mobile, setMobile] = useState(false);
 
   return (
-    <nav className="bg-white border-b border-soft relative z-50">
+    <nav className="bg-light border-b border-soft relative z-50">
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
 
         {/* LOGO */}
-        <Link href="/" className="text-lg font-semibold text-primary">
-          Cabinet Conseil
+
+        <Link href="/" className="object-contain hover:opacity-80 transition flex items-center">
+          <Image
+            src="/logo.png"
+            alt="Logo"
+            width={140}
+            height={40}
+            className="object-contain"
+          />
         </Link>
 
         {/* DESKTOP */}
