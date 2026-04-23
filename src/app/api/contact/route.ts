@@ -4,11 +4,12 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: Request) {
   const { name, company, message } = await req.json();
+  console.log("API KEY:", process.env.RESEND_API_KEY);
 
   try {
     await resend.emails.send({
       from: "onboarding@resend.dev", // temporaire
-      to: "tonemail@gmail.com",      // ton email
+      to: "2Rconsulting@gmail.com",      // ton email
       subject: "Nouvelle demande de devis",
       html: `
         <h2>Nouveau message</h2>

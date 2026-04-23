@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
 export default function Home() {
@@ -26,7 +27,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section section-divider">
+      <section className="section section-no-divider">
         <h2 className="text-primary mb-6">
           Une expertise terrain reconnue
         </h2>
@@ -38,8 +39,8 @@ export default function Home() {
         </p>
       </section>
 
-      <section className="bg-soft py-20 px-6">
-  <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+      <section className="section section-divider bg-soft py-20 px-6">
+    <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
 
     <div className="bg-white p-6 shadow-sm">
       <h3 className="text-accent mb-4">Audit</h3>
@@ -58,7 +59,7 @@ export default function Home() {
 
   </div>
 </section>
-
+<Footer />
     </>
   );
 }
