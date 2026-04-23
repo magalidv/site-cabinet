@@ -8,7 +8,7 @@ export default function Home() {
 
       <section className="relative h-[75vh] flex items-center justify-center text-center">
 
-        <div className="absolute inset-0 bg-[url('/hero.jpg')] bg-cover bg-center" />
+        <div className="absolute inset-0 bg-[url('/image_apex.jpg')] bg-cover bg-center" />
 
         <div className="absolute inset-0 bg-black/40" />
 

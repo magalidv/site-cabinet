@@ -84,7 +84,7 @@ export default function Navbar() {
                     <h3 className="text-accent mb-4">Présentation</h3>
                     <ul className="space-y-2">
                       <li><Link href="/notre-cabinet/qui-sommes-nous" className="nav-link">Qui sommes-nous</Link></li>
-                      <li><Link href="/notre-cabinet/engagements" className="nav-link">Nos engagements</Link></li>
+                      <li><Link href="/notre-cabinet/solutions" className="nav-link">Nos solutions</Link></li>
                     </ul>
                   </div>
 
