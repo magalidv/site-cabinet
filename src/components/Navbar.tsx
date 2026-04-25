@@ -4,8 +4,10 @@ import Link from "next/link";
 import { useState, useRef } from "react";
 import Image from "next/image";
 
+
 export default function Navbar() {
   const [active, setActive] = useState<string | null>(null);
+  const [open, setOpen] = useState(false);
   const timeoutRef = useRef<any>(null);
 
   const openMenu = (menu: string) => {
@@ -18,6 +20,8 @@ export default function Navbar() {
       setActive(null);
     }, 200); // 👈 délai = UX smooth
   };
+
+  
 
   return (
     <nav className="bg-white border-b border-soft relative z-50">
@@ -120,8 +124,31 @@ export default function Navbar() {
 
         </div>
 
-        <button className="md:hidden text-2xl">☰</button>
+        <button className="md:hidden text-2xl" onClick={() => setOpen(!open)}>☰</button>
 
+              {/* MENU MOBILE */}
+      {open && (
+        <div className="absolute top-full left-0 w-full bg-white shadow-lg flex flex-col gap-4 p-6 md:hidden">
+          <Link href="/notre-cabinet/qui-sommes-nous" onClick={() => setOpen(false)}>
+            Cabinet
+          </Link>
+                    <Link href="/notre-cabinet/solutions" onClick={() => setOpen(false)}>
+            Nos solutions
+          </Link>
+
+          <Link href="/savoir-faire" onClick={() => setOpen(false)}>
+            Savoir-faire
+          </Link>
+
+          <Link
+            href="/contact"
+            onClick={() => setOpen(false)}
+            className="bg-accent text-white px-4 py-2 rounded w-fit"
+          >
+            Contact
+          </Link>
+        </div>
+      )}
       </div>
     </nav>
   );
