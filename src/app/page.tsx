@@ -3,6 +3,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Home() {
@@ -65,9 +66,9 @@ export default function Home() {
             Optimisez vos processus de production et gagnez en rentabilité grâce à une approche lean pragmatique.
           </p>
 
-          <button className="btn">
+          <Link href="/contact" className="btn">
             Demander un accompagnement
-          </button>
+          </Link>
         </div>
       </section>
 
@@ -77,12 +78,13 @@ export default function Home() {
 
           <div>
             <h1 className="text-primary mb-6">
-              Optimisez vos performances industrielles
+              Un partenaire pour accompagner votre développement
             </h1>
 
             <p className="mb-6 text-gray-700">
-              J’accompagne les entreprises industrielles dans l’amélioration de
-              leurs processus, avec une approche pragmatique et orientée résultats.
+              Un accompagnement spécialisé dans l’excellence opérationnelle pour les entreprises pour 
+              leurs projets de transformation et d’amélioration continue, avec une priorité : 
+              créer de la valeur durable pour votre activité. 
             </p>
 
             <a
@@ -101,8 +103,8 @@ export default function Home() {
       </section>
 
       {/* SECTION 2 */}
-      <section className="section section-divider bg-light py-20 px-6">
-        <div className="mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <section className="section section-divider bg-light">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
 
           <div className="relative h-[400px] rounded-xl overflow-hidden shadow-lg order-2 md:order-1">
             <Image src="/accueil/pexels-dos.jpg" alt="" fill className="object-cover" />
@@ -110,14 +112,17 @@ export default function Home() {
 
           <div className="order-1 md:order-2">
             <h2 className="text-primary mb-4">
-              Une approche terrain et pragmatique
+              Des solutions sur-mesure à votre besoin et durables
             </h2>
 
-            <p className="text-gray-700">
-              Une immersion rapide, des actions concrètes et des résultats visibles.
-              Mon objectif est simple : améliorer votre performance sans complexifier
-              votre organisation.
-            </p>
+            <p className="mb-6 text-gray-700">
+              Vous cherchez à gagner en productivité, structurer vos opérations ou accélérer votre transformation Lean ? 
+            <br /> Je vous accompagne avec une approche terrain, pragmatique et orientée résultats. </p> 
+
+            <a href="/savoir-faire/expertise"
+            className="bg-accent text-white px-6 py-3 rounded shadow hover:opacity-90 transition">
+              Notre expertise
+            </a>
           </div>
 
         </div>

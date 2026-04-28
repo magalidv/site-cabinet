@@ -47,7 +47,7 @@ export default function Navbar() {
           {/* NOTRE CABINET */}
           <div onMouseEnter={() => openMenu("cabinet")}>
             <span className="cursor-pointer px-3 py-2 rounded hover:bg-light transition">
-              Notre cabinet
+              Nous connaitre
             </span>
           </div>
 
@@ -87,14 +87,15 @@ export default function Navbar() {
                   <div>
                     <h3 className="text-accent mb-4">Présentation</h3>
                     <ul className="space-y-2">
-                      <li><Link href="/notre-cabinet/qui-sommes-nous" className="nav-link">Qui sommes-nous</Link></li>
-                      <li><Link href="/notre-cabinet/solutions" className="nav-link">Nos solutions</Link></li>
+                      <li><Link href="/notre-cabinet/qui-sommes-nous" className="nav-link">Le cabinet</Link></li>
+                      <li><Link href="/notre-cabinet/mon-parcour" className="nav-link">Mon parcours</Link></li>
                     </ul>
                   </div>
 
                   <div>
                     <p className="text-sm text-gray-600">
-                      Accompagnement des industriels dans l’amélioration continue et la performance.
+                      Decouvrez la philosophie de notre cabinet, notre parcours et notre approche 
+                      pour accompagner les entreprises industrielles dans l’amélioration de leur performance.
                     </p>
                   </div>
                 </div>
@@ -106,14 +107,15 @@ export default function Navbar() {
                   <div>
                     <h3 className="text-accent mb-4">Expertises</h3>
                     <ul className="space-y-2">
-                      <li><Link href="/savoir-faire/realisations" className="nav-link">Nos réalisations</Link></li>
-                      <li><Link href="/savoir-faire/outils" className="nav-link">Nos outils</Link></li>
+                      <li><Link href="/savoir-faire/solutions" className="nav-link">Nos solutions</Link></li>
+                      <li><Link href="/savoir-faire/expertise" className="nav-link">Notre expertise</Link></li>
                     </ul>
                   </div>
 
                   <div>
                     <p className="text-sm text-gray-600">
-                      Lean management, optimisation des flux et gains de productivité.
+                      Fort de nombreuses années dans l'industrie, votre réussite est notre priorité. 
+                      Nous vous accompagnons avec des solutions concrètes et adaptées à vos enjeux.
                     </p>
                   </div>
                 </div>

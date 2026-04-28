@@ -7,7 +7,7 @@ export default function SavoirFairePage() {
     <>
       <Navbar />
 
-      {/* HERO */}
+      {/* EN-TETE */}
       <section className="bg-light py-20 px-6 text-center">
         <h1 className="text-primary mb-6">
           Solutions pour améliorer durablement votre performance

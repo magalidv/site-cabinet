@@ -55,7 +55,7 @@ export default function ContactPage() {
           {/* IMAGE */}
           <div className="relative w-full h-[400px] rounded-xl overflow-hidden shadow-lg">
             <Image
-              src="/image_ecoute.jpg"
+              src="/contact/image_ecoute.jpg"
               alt="contactez_nous"
               fill
               className="object-cover"

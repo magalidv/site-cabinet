@@ -7,7 +7,7 @@ export default function AboutPage() {
     <>
       <Navbar />
 
-      {/* HERO */}
+      {/* EN-TETE */}
       <section className="bg-light py-20 px-6 text-center">
         <h1 className="text-primary mb-6">
           Un expert terrain au service de la performance industrielle
@@ -19,8 +19,8 @@ export default function AboutPage() {
       </section>
 
       {/* EXPERIENCE */}
-      <section className="section">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+      <section className="py-24 px-6 bg-white">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
 
           <div>
             <h2 className="text-primary mb-6">
@@ -53,7 +53,7 @@ export default function AboutPage() {
       </section>
 
       {/* REALITE TERRAIN */}
-      <section className="bg-light py-20 px-6">
+      <section className="section-divider bg-light py-20 px-6">
         <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 gap-12 items-center">
 
           <div className="relative h-[400px] rounded-xl overflow-hidden shadow-lg order-2 md:order-1">
@@ -92,8 +92,8 @@ export default function AboutPage() {
       </section>
 
       {/* APPROCHE */}
-      <section className="section">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+      <section className="section-divider py-24 px-6 bg-white">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
 
           <div>
             <h2 className="text-primary mb-6">
@@ -136,11 +136,18 @@ export default function AboutPage() {
             Un partenaire pour accompagner votre développement
           </h2>
 
-          <p className="text-light">
+          <p className="mb-8 text-light">
             Aujourd’hui, j’accompagne les entreprises industrielles dans leurs projets
             de transformation et d’amélioration continue, avec une priorité :
             créer de la valeur durable pour votre activité.
           </p>
+
+          <a
+            href="/contact"
+            className="bg-accent px-6 py-3 rounded shadow hover:opacity-90 transition"
+          >
+            Me contacter
+          </a>
 
         </div>
       </section>
