@@ -12,10 +12,9 @@ export default function AProposPage() {
         <h1 className="text-primary mb-6">
           À propos
         </h1>
-
-        <p className="max-w-2xl mx-auto text-gray-700">
-          Un expert terrain au service de la performance industrielle et de l’amélioration continue.
-        </p>
+        <h3 className="max-w-5xl mx-auto text-accent">
+         Un expert terrain au service de la performance industrielle et de l’amélioration continue.
+        </h3>
       </section>
 
       {/* ===== BLOC A ===== */}
