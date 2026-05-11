@@ -19,14 +19,14 @@ export default function Navbar() {
           <Image
             src="/logo_w.png"
             alt="Logo"
-            width={140}
-            height={40}
+            width={220}
+            height={80}
             className="object-contain"
           />
         </Link>
 
         {/* MENU DESKTOP */}
-        <div className="hidden md:flex gap-4 items-center text-sm">
+        <div className="hidden md:flex gap-4 items-center">
 
           <Link
             href="/notre-cabinet/qui-sommes-nous"

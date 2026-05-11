@@ -55,7 +55,7 @@ export default function ContactPage() {
           {/* IMAGE */}
           <div className="relative w-full h-[400px] rounded-xl overflow-hidden shadow-lg">
             <Image
-              src="/contact/image_ecoute.jpg"
+              src="/contact/image_ecoute.png"
               alt="contactez_nous"
               fill
               className="object-cover"
@@ -64,13 +64,13 @@ export default function ContactPage() {
 
           {/* TEXTE */}
           <div>
-            <h2 className="text-primary mb-4">
-              Vous souhaitez échanger sur un projet au sein de votre organisation ou bénéficier d’un accompagnement dans votre transformation ?
-            </h2>
-
             <h3 className="text-primary mb-4">
-              Remplissez le formulaire de contact ci-dessous, notre équipe reviendra vers vous rapidement pour répondre à toutes vos questions.
+              Vous souhaitez échanger sur un projet au sein de votre organisation ou bénéficier d’un accompagnement dans votre transformation ?
             </h3>
+
+            <h4 className="text-primary mb-4">
+              Remplissez le formulaire de contact ci-dessous, notre équipe reviendra vers vous rapidement pour répondre à toutes vos questions.
+            </h4>
 
             <p className="text-black">
               Vous pouvez aussi joindre notre équipe par téléphone au  <strong>02 44 76 03 60</strong>.
@@ -83,7 +83,7 @@ export default function ContactPage() {
       <section className="bg-primary py-16 px-6">
         <div className="max-w-4xl mx-auto text-white">
 
-          <h2 className="mb-8">Formulaire de contact</h2>
+          <h2 className="text-accent mb-8">Formulaire de contact</h2>
 
           <form onSubmit={handleSubmit} className="flex flex-col gap-4">
 

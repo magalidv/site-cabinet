@@ -146,7 +146,7 @@ export default function AboutPage() {
             href="/contact"
             className="bg-accent px-6 py-3 rounded shadow hover:opacity-90 transition"
           >
-            Me contacter
+            Nous contacter
           </a>
 
         </div>

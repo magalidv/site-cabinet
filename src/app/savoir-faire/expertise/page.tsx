@@ -9,42 +9,42 @@ export default function SavoirFairePage() {
       text: `Fort d’une dizaine d’années d’expérience en industrie, j’ai développé mon expertise au sein d’environnements exigeants, notamment dans des secteurs tels que l’aéronautique, l’automobile et l’industrie du carton.`,
       highlight:
         "Des secteurs où les exigences en qualité, sécurité, performance et fiabilité sont parmi les plus élevées.",
-      image: "/solutions/solution1.jpg",
+      image: "/expertise/solution1.jpg",
     },
     {
       title: "Une vision globale de l’industrie, du terrain à la stratégie",
       text: `Mon parcours m’a permis d’intervenir sur l’ensemble de la chaîne de valeur industrielle : production et lignes de fabrication, supply chain et gestion des flux, maintenance industrielle, qualité, sécurité et environnement (QHSE), amélioration continue et Lean management.`,
       highlight:
         "Cette transversalité me permet d’avoir une lecture rapide et pertinente de vos enjeux, qu’ils soient opérationnels ou organisationnels.",
-      image: "/solutions/solution2.jpg",
+      image: "/expertise/solution2.jpg",
     },
     {
       title: "Une expertise éprouvée dans des environnements complexes",
       text: `J’ai évolué aussi bien dans des productions en grande série à forte cadence que dans des environnements à forte valeur ajoutée et exigences élevées. Mais également au sein de grands groupes industriels structurés comme dans des PME industrielles agiles.`,
       highlight:
         "Résultat : une capacité à m’adapter rapidement à votre organisation, vos contraintes et votre niveau de maturité.",
-      image: "/solutions/solution3.jpg",
+      image: "/expertise/solution3.jpg",
     },
     {
       title: "Un accompagnement haut de gamme, orienté résultats",
       text: `J’interviens sur des problématiques clés pour la performance industrielle : optimisation des flux logistiques, amélioration de la productivité des lignes de production, structuration de la maintenance industrielle, déploiement de démarches Lean et d’amélioration continue, amélioration de la qualité, de la sécurité et de l’environnement, pilotage de projets industriels stratégiques, réduction des coûts et amélioration de la performance globale.`,
       highlight:
         "Mon approche repose sur une compréhension fine du terrain, des solutions concrètes et adaptées, ainsi qu’une exigence élevée de résultats.",
-      image: "/solutions/solution4.jpg",
+      image: "/expertise/solution4.jpg",
     },
     {
       title: "Une conviction forte : la simplicité au service de la performance",
       text: `Dans des environnements industriels complexes, la performance ne vient pas de la complexité, mais de la maîtrise des fondamentaux.`,
       highlight:
         "Mon rôle : vous aider à structurer, simplifier et optimiser vos opérations pour atteindre une performance durable et mesurable.",
-      image: "/solutions/solution5.jpg",
+      image: "/expertise/solution5.jpg",
     },
     {
       title: "Un partenaire engagé dans votre réussite",
       text: `Je m’inscris comme un partenaire opérationnel, engagé à vos côtés pour atteindre vos objectifs.`,
       highlight:
         "Votre performance devient un engagement partagé.",
-      image: "/solutions/solution6.jpg",
+      image: "/expertise/solution6.jpg",
     },
   ];
 
@@ -69,7 +69,7 @@ export default function SavoirFairePage() {
       {sections.map((item, index) => (
         <section
           key={index}
-          className={`py-24 px-6 ${
+          className={`py-24 px-6 section-divider ${
             index % 2 === 0 ? "bg-white" : "bg-light"
           }`}
         >
@@ -133,7 +133,7 @@ export default function SavoirFairePage() {
             href="/contact"
             className="inline-block bg-accent px-8 py-4 rounded-lg shadow-lg hover:opacity-90 transition"
           >
-            Me contacter
+            Nous contacter
           </a>
 
         </div>

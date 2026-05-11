@@ -14,36 +14,43 @@ export default function Home() {
       title: "Analyse de la chaîne de valeur",
       content:
         "Identifiez rapidement vos pertes et activez des gains concrets.",
+      position: "object-[50%_60%]",
     },
     {
       title: "Diagnostic de maturité Lean",
       content:
         "Sachez exactement où agir pour progresser efficacement.",
+      position: "object-[50%_70%]",
     },
     {
       title: "Animation de la performance",
       content:
         "Pilotez votre activité au quotidien.",
+      position: "object-[50%_30%]",
     },
     {
       title: "Culture Lean terrain",
       content:
         "Ancrez les bons réflexes.",
+      position: "object-[50%_70%]",
     },
     {
       title: "Amélioration de la productivité",
       content:
         "Optimisation concrète de vos performances industrielles.",
+      position: "object-center",
     },
         {
       title: "Optimisation des implantations",
       content:
         "Optimisation des flux et des surfaces existantes.",
+      position: "object-[50%_40%]",
     },
     {
       title: "Gestion de projets industriels",
       content:
         "Pilotage structuré de vos projets stratégiques.",
+      position: "object-[50%_80%]",
     },
   ];
 
@@ -51,9 +58,9 @@ export default function Home() {
     <>
       <Navbar />
 
-      <section className="relative h-[75vh] flex items-center justify-center text-center">
+      <section className="relative h-[60vh] flex items-center justify-center text-center">
 
-        <div className="absolute inset-0 bg-[url('/accueil/image_apex.jpg')] bg-cover bg-center" />
+        <div className="absolute inset-0 bg-[url('/banniere/banniere4.jpg')] bg-cover bg-center" />
 
         <div className="absolute inset-0 bg-black/40" />
 
@@ -184,7 +191,7 @@ export default function Home() {
                   src={`/accueil/solution${active + 1}.jpg`}
                   alt=""
                   fill
-                  className="object-cover"
+                  className={`object-cover ${solutions[active].position}`}
                 />
               </div>
 
