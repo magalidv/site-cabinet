@@ -11,8 +11,8 @@ export default function Footer() {
         <div>
           <h3 className="text-accent mb-4">Cabinet</h3>
           <ul className="space-y-2 text-sm">
-            <li><Link href="/notre-cabinet/qui-sommes-nous">Qui sommes-nous</Link></li>
-            <li><Link href="/notre-cabinet/engagements">Nos engagements</Link></li>
+            <li><Link href="/notre-cabinet/qui-sommes-nous">Le cabinet</Link></li>
+            <li><Link href="/notre-cabinet/mon-parcour">Notre vision</Link></li>
           </ul>
         </div>
 
@@ -20,8 +20,8 @@ export default function Footer() {
         <div>
           <h3 className="text-accent mb-4">Savoir-faire</h3>
           <ul className="space-y-2 text-sm">
-            <li><Link href="/savoir-faire/realisations">Nos réalisations</Link></li>
-            <li><Link href="/savoir-faire/outils">Nos outils</Link></li>
+            <li><Link href="/savoir-faire/solutions">Nos solutions</Link></li>
+            <li><Link href="/savoir-faire/expertise">Notre expertises</Link></li>
           </ul>
         </div>
 
@@ -31,7 +31,7 @@ export default function Footer() {
           <ul className="space-y-2 text-sm">
             <li>Email : contact@cabinet.fr</li>
             <li>Téléphone : 06 XX XX XX XX</li>
-            <li>France</li>
+            <li>Savoie, France</li>
           </ul>
         </div>
 

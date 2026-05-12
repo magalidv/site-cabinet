@@ -116,3 +116,10 @@ nav span:hover {
 .flip-back {
   transform: rotateY(180deg);
 }
+
+.faq-arrow {
+    font-size: 3rem;
+    color: #bf7960;
+    transition: transform .3s;
+    flex-shrink: 0;
+}

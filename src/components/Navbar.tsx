@@ -43,6 +43,13 @@ export default function Navbar() {
           </Link>
 
           <Link
+            href="/savoir-faire/expertise"
+            className="px-4 py-2 rounded hover:bg-light transition"
+          >
+            Expertise
+          </Link>
+
+          <Link
             href="/savoir-faire/solutions"
             className="px-4 py-2 rounded hover:bg-light transition"
           >
@@ -50,11 +57,13 @@ export default function Navbar() {
           </Link>
 
           <Link
-            href="/savoir-faire/expertise"
+            href="/savoir-faire/realisations"
             className="px-4 py-2 rounded hover:bg-light transition"
           >
-            Expertise
+            Realisations
           </Link>
+
+          
 
           {/* CTA CONTACT */}
           <Link

@@ -74,7 +74,7 @@ export default function Home() {
           </p>
 
           <Link href="/contact" className="btn">
-            Demander un accompagnement
+            Premier rendez-vous gratuit
           </Link>
         </div>
       </section>
@@ -217,6 +217,116 @@ export default function Home() {
         </div>
       </section>
 
+            {/* SECTION CYCLE / ACCOMPAGNEMENT */}
+      <section className="section section-divider">
+
+        {/* DECOR */}
+        <div className="absolute top-0 left-0 w-full h-32 pointer-events-none" />
+
+        <div className="max-w-7xl mx-auto relative z-10">
+
+          {/* HEADER */}
+          <div className="text-center mb-24">
+
+            <span className="text-accent uppercase tracking-[0.25em] text-xl">
+              Notre accompagnement
+            </span>
+
+            <h2 className="text-primary mt-5 mb-6">
+              Une approche structurée de la performance industrielle
+            </h2>
+
+            <p className="max-w-3xl mx-auto text-gray-700 text-lg leading-relaxed">
+              De l’analyse terrain jusqu’au pilotage durable des résultats,
+              chaque étape s’inscrit dans une logique de progression continue.
+            </p>
+
+          </div>
+
+          {/* CYCLE */}
+          <div className="relative">
+
+            {/* LIGNE CENTRALE */}
+            <div className="hidden lg:block absolute top-[72px] left-[8%] right-[8%] h-[2px] bg-primary/10" />
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-12 lg:gap-6">
+
+              {[
+                "Analyser les flux",
+                "Identifier les priorités",
+                "Structurer les standards",
+                "Optimiser le terrain",
+                "Piloter les indicateurs",
+                "Ancrer la performance",
+              ].map((step, index) => (
+
+                <div
+                  key={index}
+                  className="relative flex flex-col items-center text-center group"
+                >
+
+                  {/* CONNECTEURS MOBILE */}
+                  {index !== 5 && (
+                    <div className="lg:hidden absolute top-[72px] left-1/2 w-[2px] h-20 bg-primary/10" />
+                  )}
+
+                  {/* CERCLE */}
+                  <div className="relative z-10 w-36 h-36 rounded-full bg-white border border-primary/10 shadow-lg flex flex-col items-center justify-center transition duration-300 group-hover:scale-105 group-hover:shadow-2xl group-hover:border-accent/30">
+
+                    {/* NUMERO */}
+                    <span className="text-accent text-sm tracking-widest mb-2">
+                      0{index + 1}
+                    </span>
+
+                    {/* TITRE */}
+                    <h3 className="text-primary text-lg leading-snug px-4">
+                      {step}
+                    </h3>
+
+                  </div>
+
+                </div>
+
+              ))}
+
+            </div>
+
+          </div>
+
+          {/* QUOTE */}
+          <div className="mt-28 max-w-5xl mx-auto">
+
+            <div className="bg-primary rounded-[32px] p-10 md:p-16 text-center shadow-2xl relative overflow-hidden">
+
+              {/* GLOW */}
+              <div className="absolute -top-20 -right-20 w-64 h-64 bg-accent/10 rounded-full blur-3xl" />
+
+              <div className="relative z-10">
+
+                <p className="text-white text-xl md:text-2xl leading-relaxed">
+
+                  <span className="text-accent font-semibold">
+                    La performance industrielle ne repose pas uniquement sur les outils.
+                  </span>
+
+                  <br />
+                  <br />
+                  </p>
+                <p className="text-white text-sm md:text-sm leading-relaxed">
+                  Elle se construit grâce à la cohérence entre les méthodes,
+                  les équipes, l’organisation et les pratiques terrain.
+
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
       {/* CONTACT */}
       <section className="section section-divider py-28 px-6">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
@@ -235,6 +345,10 @@ export default function Home() {
             <p className="text-gray-700 mb-6">
               Discutons ensemble de vos enjeux industriels et identifions les leviers
               d’amélioration adaptés à votre situation.
+
+              <strong className="block mt-4">
+                Premier échange gratuit et sans engagement.
+              </strong>
             </p>
 
             <a
