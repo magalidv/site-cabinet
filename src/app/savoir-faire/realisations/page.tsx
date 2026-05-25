@@ -32,13 +32,14 @@ export default function RealisationsPage() {
             {
               id: "01",
               sector: "Performance industrielle — Industrie du carton",
-              title: "Amélioration de la performance d’une ligne de production",
+              title: "Performance d’une ligne de production",
+              objectif:"Améliorer la productivité et fiabiliser une ligne de production d’emballages.",
               context:
-                "Nouvelle ligne de production d’emballage carton mise en service depuis 6 mois, ne répondant pas aux objectifs de disponibilité et de productivité attendus.",
+                "Nouvelle ligne de production d’emballage carton, mise en service depuis 6 mois, ne répondant pas aux objectifs de disponibilité et de productivité attendus.",
               badge: "+40%",
               badgeLabel: "de productivité obtenue",
               metric1: {
-                title: "Productivité",
+                title: "Productivité horaire",
                 rows: [
                   ["Moyenne initiale", "2 500 boîtes/h"],
                   ["Situation stabilisée", "3 500 boîtes/h"],
@@ -50,7 +51,7 @@ export default function RealisationsPage() {
                 rows: [
                   ["Taux de panne initial", "15%"],
                   ["Taux stabilisé", "5%"],
-                  ["Amélioration", "-10 pts"],
+                  ["Amélioration", "10 pts"],
                 ],
               },
               actions: [
@@ -60,7 +61,7 @@ export default function RealisationsPage() {
                 "Check-lists de sécurité",
               ],
               insight:
-                "Les gains ont principalement été obtenus grâce à la structuration des standards terrain et à l’amélioration de la maintenance autonome.",
+                "Les gains ont principalement été obtenus grâce à la structuration des standards terrain et à l’amélioration de la maintenance autonome. Mesures initiales et résultats calculés sur 3 mois",
               duration: "4 mois",
               approach: "TPM • Lean • Standards terrain",
             },
@@ -69,16 +70,17 @@ export default function RealisationsPage() {
               id: "02",
               sector: "Optimisation industrielle — Pôle multi-laboratoires",
               title: "Optimisation d’un pôle multi-laboratoires",
+              objectif:"Optimiser l’utilisation des surfaces et améliorer l’efficience globale, tout en remettant les espaces en conformité avec les normes d’aménagement en vigueur.",
               context:
-                "Pôle de développement composé de 17 laboratoires électroniques au sein d’un site industriel avec objectif de réduction des coûts immobiliers sans perte de productivité.",
-              badge: "-20%",
-              badgeLabel: "de surface utilisée",
+                "Pôle de développement composé de 17 laboratoires électroniques au sein d’un site industriel. Necessite une réduction des coûts immobiliers (location des surfaces) tout en maintenant le niveau de productivité existant.",
+              badge: "+20%",
+              badgeLabel: "de surface disponibles",
               metric1: {
                 title: "Optimisation des surfaces",
                 rows: [
                   ["Surface initiale", "2 500 m²"],
                   ["Surface finale", "2 000 m²"],
-                  ["Gain obtenu", "-500 m² (-20%)"],
+                  ["Gain obtenu", "500 m² (20%)"],
                 ],
               },
               metric2: {
@@ -86,17 +88,17 @@ export default function RealisationsPage() {
                 rows: [
                   ["Capacité initiale", "150 postes"],
                   ["Capacité finale", "162 postes"],
-                  ["Gain obtenu", "+12 postes (+8%)"],
+                  ["Gain obtenu", "12 postes (8%)"],
                 ],
               },
               actions: [
-                "Matrice de maturité des espaces",
+                "Matrice de maturité des espaces pour prioriser les investissements",
                 "Plan d’actions ISO 14001 & ISO 45001",
                 "Remise à niveau des installations électriques",
-                "Réorganisation des espaces selon les normes",
+                "Réorganisation des espaces et mise en conformité selon les normes",
               ],
               insight:
-                "La réorganisation des flux et des espaces a permis de réduire les coûts immobiliers tout en augmentant la capacité opérationnelle.",
+                "Le regroupement des laboratoires par métiers en mutualisant les ressources a permis une réduction de trois laboratoirs (et donc les coûts immobiliers) tout en augmentant la capacité opérationnelle.",
               duration: "9 mois",
               approach: "Lean Layout • QHSE • Optimisation surfaces",
             },
@@ -105,8 +107,9 @@ export default function RealisationsPage() {
               id: "03",
               sector: "Capacité industrielle — Optimisation d’espace",
               title: "Augmentation de capacité d’une ligne de développement",
+              objectif:"Augmenter la capacité de production d’un espace existant en optimisant l’organisation et en adaptant les installations techniques (réseaux et besoins électriques).",
               context:
-                "Croissance continue de l’activité sur un pôle de production arrivé à saturation, nécessitant une augmentation de capacité sans extension des surfaces.",
+                "Croissance continue de l’activité sur un pôle de production avec une perspective de stabilisation. Espace de production arrivé à saturation, nécessitant une augmentation de capacité sans extension de surface disponible.",
               badge: "+13%",
               badgeLabel: "de capacité obtenue",
               metric1: {
@@ -118,38 +121,40 @@ export default function RealisationsPage() {
                 ],
               },
               metric2: {
-                title: "Surface utilisée",
+                title: "Nombre de projets en cours",
                 rows: [
-                  ["Avant projet", "Inchangée"],
-                  ["Après projet", "Inchangée"],
-                  ["Évolution", "="],
+                  ["Avant projet", "13"],
+                  ["Après projet", "17"],
+                  ["Évolution", "Passage à une moyenne de 6 à 5 postes par projet"],
                 ],
               },
               actions: [
-                "Stockages bord de ligne",
-                "Management visuel structuré",
-                "Mise à niveau réseaux & électrique",
-                "Amélioration des standards visuels",
+                "Mutualisation des moyens pour augmenter le nombre de projets",
+                "Mise en place de stockages bord de ligne et d’un management visuel",
+                "Mise à niveau des réseaux et installations électriques",
+                "Réorganisation des espaces",
+                "Amélioration des standards visuels et opérationnels",
               ],
               insight:
                 "L’augmentation de capacité a été réalisée sans extension de surface grâce à une optimisation des implantations et des standards terrain.",
-              duration: "4 mois",
+              duration: "3 mois",
               approach: "Lean Manufacturing • Flux • Implantation",
             },
             {
               id: "04",
               sector: "Performance industrielle — Logistique & Supply Chain",
-              title: "Externalisation des flux logistiques (3PL)",
+              title: "Externalisation logistique (3PL)",
+              objectif:"Recentrer les équipes sur les activités à forte valeur ajoutée et améliorer l’efficience des flux.",
               context:
-                "Des activités d’emballage et de déballage à faible valeur ajoutée ainsi que la gestion d’un stock d’emballages mobilisaient du temps opérateur et de l’espace au détriment de la production.",
+                "Des activités logistiques à faible valeur ajoutée mobilisaient du temps et de l’espace au détriment de la production.",
               badge: "-83%",
               badgeLabel: "de temps d’opérations logistiques",
               metric1: {
-                title: "Temps opérationnel",
+                title: "Temps opérationnel (emballage / déballage)",
                 rows: [
-                  ["Emballage / déballage initial", "6 h / semaine"],
+                  ["Situation initial", "6 h / semaine"],
                   ["Situation après projet", "1 h / semaine"],
-                  ["Gain obtenu", "-5 h (-83%)"],
+                  ["Gain obtenu", "5 h (83%)"],
                 ],
               },
               metric2: {
@@ -157,7 +162,7 @@ export default function RealisationsPage() {
                 rows: [
                   ["Temps stockage initial", "1 h / semaine"],
                   ["Situation après projet", "0 h / semaine"],
-                  ["Amélioration", "-1 h (-100%)"],
+                  ["Amélioration", "1 h (100%)"],
                 ],
               },
               metric3: {
@@ -170,14 +175,12 @@ export default function RealisationsPage() {
               },
               actions: [
                 "Externalisation des opérations vers un prestataire 3PL",
-                "Mise en place de standards et procédures d’emballage / déballage",
+                "Mise en place de standards et procédures logistique",
                 "Formation et accompagnement du prestataire",
-                "Réduction des risques TMS liés à la manutention",
-                "Réallocation des ressources vers des activités à forte valeur ajoutée",
                 "Libération d’espace pour augmenter la surface de production",
               ],
               insight:
-                "Le levier principal a été la suppression des tâches à faible valeur ajoutée en les externalisant, permettant un recentrage immédiat des équipes sur la production.",
+                "Le levier principal a été la suppression des tâches à faible valeur ajoutée en les externalisant, permettant un recentrage immédiat des équipes sur la production.s",
               duration: "5 mois",
               approach: "Lean • Supply Chain • Externalisation 3PL",
             },
@@ -195,7 +198,7 @@ export default function RealisationsPage() {
               <div className="bg-white rounded-3xl shadow-2xl border border-gray-100 overflow-hidden">
 
                 {/* HEADER */}
-                <div className="grid lg:grid-cols-[1fr_220px] gap-10 p-10 md:p-14 border-b border-gray-100">
+                <div className="grid lg:grid-cols-[1fr_220px] gap-10 p-10 md:p-14 border-b border-gray-100 items-start">
 
                   <div>
                     <div className="text-accent font-medium mb-4">
@@ -205,6 +208,18 @@ export default function RealisationsPage() {
                     <h2 className="text-primary text-4xl leading-tight mb-6">
                       {item.title}
                     </h2>
+                    <div className="text-accent font-medium mb-3">
+                      Objectif : 
+                    </div>
+
+                    <p className="text-gray-700 leading-relaxed text-lg">
+                      {item.objectif}
+                    </p>
+                    <br/>
+
+                    <div className="text-accent font-medium mb-3">
+                      Contexte :
+                    </div>
 
                     <p className="text-gray-700 leading-relaxed text-lg">
                       {item.context}
@@ -212,7 +227,8 @@ export default function RealisationsPage() {
                   </div>
 
                   {/* BADGE */}
-                  <div className="bg-primary rounded-2xl p-8 text-white flex flex-col justify-center items-center text-center">
+                  <div className="bg-primary rounded-2xl p-8 text-white flex flex-col justify-center items-center text-center self-start sticky top-10">
+
                     <div className="text-5xl font-bold mb-3">
                       {item.badge}
                     </div>
@@ -220,6 +236,7 @@ export default function RealisationsPage() {
                     <div className="text-white/80 leading-relaxed">
                       {item.badgeLabel}
                     </div>
+
                   </div>
 
                 </div>
@@ -369,7 +386,7 @@ export default function RealisationsPage() {
         <div className="bg-white rounded-3xl shadow-2xl border border-gray-100 overflow-hidden">
 
           {/* HEADER */}
-          <div className="grid lg:grid-cols-[1fr_220px] gap-10 p-10 md:p-14 border-b border-gray-100">
+          <div className="grid lg:grid-cols-[1fr_220px] gap-10 p-10 md:p-14 border-b border-gray-100 items-start">
 
             <div>
               <div className="text-accent font-medium mb-4">
@@ -377,85 +394,57 @@ export default function RealisationsPage() {
               </div>
 
               <h2 className="text-primary text-4xl leading-tight mb-6">
-                Structurer le pilotage et l’animation de la performance 
-                à tous les niveaux de l’organisation, du terrain à la direction.
-                <br />
-                
+                Mise en place d’une animation de la performance
               </h2>
+              <div className="text-accent font-medium mb-3">
+                  Objectif : 
+              </div>
 
               <p className="text-gray-700 leading-relaxed text-lg">
-                L’animation de la performance reposait sur une unique réunion globale, entraînant :
-              <br />
-              <ul className="space-y-4 text-gray-700">
-
-                <li>
-                  • une perte de réactivité face aux problèmes
-                </li>
-
-                <li>
-                  • un manque de circulation de l’information
-                </li>
-
-                <li>
-                  • l’absence d’indicateurs de suivi fiables
-                </li>
-
-                <li>
-                  • une difficulté à identifier et traiter les points durs
-                </li>
-              </ul>
-
+                 Structurer le pilotage de la performance du terrain à la direction.
               </p>
+              <br/>
+              <div className="text-accent font-medium mb-3">
+                  Contexte :
+              </div>
+              <p className="text-gray-700 leading-relaxed text-lg">
+                L’animation de la performance reposait sur une unique réunion globale, entraînant :
+                <br />
+                <ul className="space-y-4 text-gray-700">
+
+                  <li>
+                    • un manque réactivité face aux problèmes
+                  </li>
+
+                  <li>
+                    • une circulation d’information limitée
+                  </li>
+
+                  <li>
+                    • une absence d’indicateurs de suivi fiables
+                  </li>
+
+                  <li>
+                    • une difficulté à identifier et traiter les points durs
+                  </li>
+                </ul>
+                </p>
+
             </div>
 
             {/* BADGE */}
-            <div className="bg-primary rounded-2xl p-8 text-white flex flex-col justify-center items-center text-center">
-              <div className="text-5xl font-bold mb-3">
-                3
-              </div>
-
-              <div className="text-white/80 leading-relaxed">
-                niveaux
-                <br />
-                de pilotage
+            <div className="bg-primary rounded-2xl p-8 text-white flex flex-col justify-center items-center text-center self-start sticky top-10">
+              <div className="text-white/90 font-bold leading-relaxed">
+                Performance  plus réactive<br/> et mieux pillotée <br/>
               </div>
             </div>
 
           </div>
 
           {/* METRICS */}
-          <div className="grid lg:grid-cols-3 gap-8 p-10 md:p-14 bg-light">
+          <div className="grid lg:grid-cols-2 gap-8 p-10 md:p-14 bg-light">
 
-            {/* BLOC 1 */}
-            <div className="bg-white rounded-2xl p-8 shadow-sm">
-
-              <h3 className="text-primary mb-6">
-                Difficultés identifiées
-              </h3>
-
-              <ul className="space-y-4 text-gray-700">
-
-                <li>
-                  • Perte de réactivité face aux problèmes terrain
-                </li>
-
-                <li>
-                  • Manque de circulation de l’information
-                </li>
-
-                <li>
-                  • Absence d’indicateurs de suivi fiables
-                </li>
-
-                <li>
-                  • Difficulté à identifier et traiter les points durs
-                </li>
-
-              </ul>
-
-            </div>
-
-            {/* BLOC 2 = IMAGE */}
+            {/* BLOC 1 = IMAGE */}
             <div className="bg-white rounded-2xl p-4 shadow-sm">
 
               <div className="relative w-full h-full min-h-[320px] rounded-xl overflow-hidden border border-gray-100">
@@ -471,7 +460,7 @@ export default function RealisationsPage() {
 
             </div>
 
-            {/* BLOC 3 */}
+            {/* BLOC 2 */}
             <div className="bg-white rounded-2xl p-8 shadow-sm">
 
               <h3 className="text-primary mb-6">

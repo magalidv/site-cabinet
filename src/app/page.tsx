@@ -246,10 +246,13 @@ export default function Home() {
           {/* CYCLE */}
           <div className="relative">
 
-            {/* LIGNE CENTRALE */}
+            {/* LIGNE HORIZONTALE DESKTOP */}
             <div className="hidden lg:block absolute top-[72px] left-[8%] right-[8%] h-[2px] bg-primary/10" />
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-12 lg:gap-6">
+            {/* LIGNE VERTICALE MOBILE */}
+            <div className="lg:hidden absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-[2px] bg-primary/10" />
+
+            <div className="grid grid-cols-1 lg:grid-cols-6 gap-14 lg:gap-6">
 
               {[
                 "Analyser les flux",
@@ -264,11 +267,6 @@ export default function Home() {
                   key={index}
                   className="relative flex flex-col items-center text-center group"
                 >
-
-                  {/* CONNECTEURS MOBILE */}
-                  {index !== 5 && (
-                    <div className="lg:hidden absolute top-[72px] left-1/2 w-[2px] h-20 bg-primary/10" />
-                  )}
 
                   {/* CERCLE */}
                   <div className="relative z-10 w-36 h-36 rounded-full bg-white border border-primary/10 shadow-lg flex flex-col items-center justify-center transition duration-300 group-hover:scale-105 group-hover:shadow-2xl group-hover:border-accent/30">
