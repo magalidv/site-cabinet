@@ -17,10 +17,10 @@ export default function Navbar() {
           className="object-contain hover:opacity-80 transition flex items-center"
         >
           <Image
-            src="/logo_w.png"
+            src="/logo.png"
             alt="Logo"
-            width={220}
-            height={80}
+            width={150}
+            height={30}
             className="object-contain"
           />
         </Link>
@@ -29,35 +29,35 @@ export default function Navbar() {
         <div className="hidden md:flex gap-4 items-center">
 
           <Link
-            href="/notre-cabinet/qui-sommes-nous"
+            href="/cabinet"
             className="px-4 py-2 rounded hover:bg-light transition"
           >
             Le cabinet
           </Link>
 
           <Link
-            href="/notre-cabinet/mon-parcour"
+            href="/vision"
             className="px-4 py-2 rounded hover:bg-light transition"
           >
             Notre vision
           </Link>
 
           <Link
-            href="/savoir-faire/expertise"
+            href="/expertise"
             className="px-4 py-2 rounded hover:bg-light transition"
           >
             Expertise
           </Link>
 
           <Link
-            href="/savoir-faire/solutions"
+            href="/solutions"
             className="px-4 py-2 rounded hover:bg-light transition"
           >
             Solutions
           </Link>
 
           <Link
-            href="/savoir-faire/realisations"
+            href="/realisations"
             className="px-4 py-2 rounded hover:bg-light transition"
           >
             Realisations
@@ -88,7 +88,7 @@ export default function Navbar() {
           <div className="absolute top-full left-0 w-full bg-white shadow-lg flex flex-col gap-4 p-6 md:hidden">
 
             <Link
-              href="/notre-cabinet/qui-sommes-nous"
+              href="/cabinet"
               onClick={() => setOpen(false)}
               className="hover:text-accent transition"
             >
@@ -96,7 +96,7 @@ export default function Navbar() {
             </Link>
 
             <Link
-              href="/notre-cabinet/mon-parcour"
+              href="/vision"
               onClick={() => setOpen(false)}
               className="hover:text-accent transition"
             >
@@ -104,7 +104,7 @@ export default function Navbar() {
             </Link>
 
             <Link
-              href="/savoir-faire/solutions"
+              href="/solutions"
               onClick={() => setOpen(false)}
               className="hover:text-accent transition"
             >
@@ -112,7 +112,7 @@ export default function Navbar() {
             </Link>
 
             <Link
-              href="/savoir-faire/expertise"
+              href="/expertise"
               onClick={() => setOpen(false)}
               className="hover:text-accent transition"
             >

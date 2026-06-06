@@ -47,7 +47,7 @@ export default function AboutPage() {
           </div>
 
           <div className="relative h-[400px] rounded-xl overflow-hidden shadow-lg">
-            <Image src="/presentation/pexels-eau.jpg" alt="" fill className="object-cover" />
+            <Image src="/presentation/pexels-eau.jpg" alt="" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
           </div>
         </div>
       </section>
@@ -57,7 +57,7 @@ export default function AboutPage() {
         <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 gap-12 items-center">
 
           <div className="relative h-[400px] rounded-xl overflow-hidden shadow-lg order-2 md:order-1">
-            <Image src="/presentation/pexels-hommeface.jpg" alt="" fill className="object-cover" />
+            <Image src="/presentation/pexels-hommeface.jpg" alt="" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
           </div>
 
           <div className="order-1 md:order-2">
@@ -123,7 +123,7 @@ export default function AboutPage() {
           </div>
 
           <div className="relative h-[400px] rounded-xl overflow-hidden shadow-lg">
-            <Image src="/presentation/pexels-ingenieur.jpg" alt="" fill className="object-cover" />
+            <Image src="/presentation/pexels-ingenieur.jpg" alt="" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
           </div>
         </div>
       </section>

@@ -50,7 +50,7 @@ export default function AProposPage() {
           {/* IMAGE */}
           <div className="order-2">
             <div className="relative h-[400px] rounded-xl overflow-hidden shadow-lg">
-              <Image src="/presentation/image-conseil.jpg" alt="" fill className="object-cover" />
+              <Image src="/presentation/image-conseil.jpg" alt="" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
             </div>
           </div>
 
@@ -64,7 +64,7 @@ export default function AProposPage() {
           {/* IMAGE */}
           <div className="order-2 md:order-1">
             <div className="relative h-[400px] rounded-xl overflow-hidden shadow-lg">
-              <Image src="/presentation/image-suivi.jpg" alt="" fill className="object-cover" />
+              <Image src="/presentation/image-suivi.jpg" alt="" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
             </div>
           </div>
 
@@ -136,7 +136,7 @@ export default function AProposPage() {
           {/* IMAGE */}
           <div className="order-2">
             <div className="relative h-[400px] rounded-xl overflow-hidden shadow-lg">
-              <Image src="/presentation/image-resultat.jpg" alt="" fill className="object-cover" />
+              <Image src="/presentation/image-resultat.jpg" alt="" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
             </div>
           </div>
 

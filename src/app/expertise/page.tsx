@@ -86,6 +86,7 @@ export default function SavoirFairePage() {
                   src={item.image}
                   alt=""
                   fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover"
                 />
               </div>

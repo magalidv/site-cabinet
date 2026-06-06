@@ -12,42 +12,49 @@ export default function Home() {
   const solutions = [
     {
       title: "Analyse de la chaîne de valeur",
+      image: "/accueil/solution1.jpg",
       content:
         "Identifiez rapidement vos pertes et activez des gains concrets.",
       position: "object-[50%_60%]",
     },
     {
       title: "Diagnostic de maturité Lean",
+      image: "/accueil/solution2.jpg",
       content:
         "Sachez exactement où agir pour progresser efficacement.",
       position: "object-[50%_70%]",
     },
     {
       title: "Animation de la performance",
+      image: "/accueil/solution3.jpg",
       content:
         "Pilotez votre activité au quotidien.",
       position: "object-[50%_30%]",
     },
     {
       title: "Culture Lean terrain",
+      image: "/accueil/solution4.jpg",
       content:
         "Ancrez les bons réflexes.",
       position: "object-[50%_70%]",
     },
     {
       title: "Amélioration de la productivité",
+      image: "/accueil/solution5.jpg",
       content:
         "Optimisation concrète de vos performances industrielles.",
       position: "object-center",
     },
         {
       title: "Optimisation des implantations",
+      image: "/accueil/solution6.jpg",
       content:
         "Optimisation des flux et des surfaces existantes.",
       position: "object-[50%_40%]",
     },
     {
       title: "Gestion de projets industriels",
+      image: "/accueil/solution7.jpg",
       content:
         "Pilotage structuré de vos projets stratégiques.",
       position: "object-[50%_80%]",
@@ -74,7 +81,7 @@ export default function Home() {
           </p>
 
           <Link href="/contact" className="btn">
-            Premier rendez-vous gratuit
+            Contactez nous
           </Link>
         </div>
       </section>
@@ -103,7 +110,7 @@ export default function Home() {
           </div>
 
           <div className="relative h-[400px] rounded-xl overflow-hidden shadow-lg">
-            <Image src="/accueil/pexels-ingenieur.jpg" alt="" fill className="object-cover" />
+            <Image src="/accueil/pexels-ingenieur.jpg" alt="" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
           </div>
 
         </div>
@@ -114,7 +121,7 @@ export default function Home() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
 
           <div className="relative h-[400px] rounded-xl overflow-hidden shadow-lg order-2 md:order-1">
-            <Image src="/accueil/pexels-dos.jpg" alt="" fill className="object-cover" />
+            <Image src="/accueil/pexels-dos.jpg" alt="" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
           </div>
 
           <div className="order-1 md:order-2">
@@ -186,13 +193,23 @@ export default function Home() {
               </div>
 
               {/* IMAGE */}
-              <div className="relative h-[300px] md:h-full">
-                <Image
-                  src={`/accueil/solution${active + 1}.jpg`}
-                  alt=""
-                  fill
-                  className={`object-cover ${solutions[active].position}`}
-                />
+              <div className="relative h-[300px] md:h-full overflow-hidden">
+                {solutions.map((s, i) => (
+                  <Image
+                    key={i}
+                    src={s.image}
+                    alt=""
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className={`
+                      absolute inset-0
+                      object-cover
+                      ${s.position}
+                      transition-opacity duration-300
+                      ${active === i ? "opacity-100" : "opacity-0"}
+                    `}
+                  />
+                ))}
               </div>
 
             </div>
@@ -257,9 +274,9 @@ export default function Home() {
               {[
                 "Analyser les flux",
                 "Identifier les priorités",
+                "Déployer les indicateurs",
+                "Déployer des solutions",
                 "Structurer les standards",
-                "Optimiser le terrain",
-                "Piloter les indicateurs",
                 "Ancrer la performance",
               ].map((step, index) => (
 
@@ -331,7 +348,7 @@ export default function Home() {
 
           {/* IMAGE */}
           <div className="relative h-[400px] rounded-xl overflow-hidden shadow-lg">
-            <Image src="/accueil/pexels-presentation.jpg" alt="" fill className="object-cover" />
+            <Image src="/accueil/pexels-presentation.jpg" alt="" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
           </div>
 
           {/* TEXTE */}
@@ -341,11 +358,9 @@ export default function Home() {
             </h2>
 
             <p className="text-gray-700 mb-6">
+              <strong className="block mt-4">
               Discutons ensemble de vos enjeux industriels et identifions les leviers
               d’amélioration adaptés à votre situation.
-
-              <strong className="block mt-4">
-                Premier échange gratuit et sans engagement.
               </strong>
             </p>
 

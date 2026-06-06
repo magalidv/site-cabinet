@@ -73,7 +73,7 @@ export default function ContactPage() {
             </h4>
 
             <p className="text-black">
-              Vous pouvez aussi joindre notre équipe par téléphone au  <strong>02 44 76 03 60</strong>.
+              Vous pouvez aussi joindre notre équipe par téléphone au  <strong>07 85 88 20 12</strong>.
             </p>
           </div>
         </div>
@@ -132,14 +132,29 @@ export default function ContactPage() {
             />
 
             {/* CONSENTEMENT RGPD */}
-            <label className="flex items-start gap-2 text-sm">
+            <label className="flex items-start gap-3 text-sm text-white/90">
               <input
                 type="checkbox"
+                required
+                className="mt-1"
                 onChange={(e) =>
                   setForm({ ...form, consent: e.target.checked })
                 }
               />
-              J’accepte que mes données soient utilisées pour être recontacté.
+
+              <span>
+                J'accepte que les informations saisies dans ce formulaire soient utilisées
+                par RD Lean Conseil afin de répondre à ma demande de contact et de me
+                recontacter dans le cadre de la relation commerciale pouvant en découler.
+                Pour en savoir plus sur la gestion de vos données et exercer vos droits,
+                consultez notre{" "}
+                <a
+                  href="/politique-confidentialite"
+                  className="text-accent underline"
+                >
+                  politique de confidentialité
+                </a>.
+              </span>
             </label>
 
             {/* ERREUR */}

@@ -442,10 +442,10 @@ export default function RealisationsPage() {
           </div>
 
           {/* METRICS */}
-          <div className="grid lg:grid-cols-2 gap-8 p-10 md:p-14 bg-light">
+          <div className="grid lg:grid-cols-3 gap-8 p-10 md:p-14 bg-light">
 
             {/* BLOC 1 = IMAGE */}
-            <div className="bg-white rounded-2xl p-4 shadow-sm">
+            <div className="bg-white rounded-2xl p-4 shadow-sm lg:col-span-2">
 
               <div className="relative w-full h-full min-h-[320px] rounded-xl overflow-hidden border border-gray-100">
 
@@ -461,7 +461,7 @@ export default function RealisationsPage() {
             </div>
 
             {/* BLOC 2 */}
-            <div className="bg-white rounded-2xl p-8 shadow-sm">
+            <div className="bg-white lg:col-span-1 rounded-2xl p-8 shadow-sm">
 
               <h3 className="text-primary mb-6">
                 Actions mises en place
