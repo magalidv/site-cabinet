@@ -32,7 +32,7 @@ export default function Footer() {
           <ul className="space-y-2 text-sm">
             <li>Email : contact@rd-conseil-lean.fr</li>
             <li>Téléphone : 07 85 88 20 12</li>
-            <li>Savoie, France</li>
+            <li>Savoie, Auvergne-Rhône-Alpes, France</li>
           </ul>
         </div>
 
