@@ -37,7 +37,7 @@ export default function PrivacyPage() {
       </p>
 
       <p>
-        contact@rd-lean-conseil.fr
+        contact@rd-conseil-lean.fr
       </p>
 
     </LegalLayout>

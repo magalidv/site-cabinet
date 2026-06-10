@@ -7,7 +7,7 @@ const space = Space_Grotesk({
 });
 
 export const metadata = {
-  title: "RD Lean Conseil",
+  title: "RD Conseil Lean",
   description: "Amélioration continue & performance industrielle",
   icons: {
     icon: [

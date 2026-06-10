@@ -144,7 +144,7 @@ export default function ContactPage() {
 
               <span>
                 J'accepte que les informations saisies dans ce formulaire soient utilisées
-                par RD Lean Conseil afin de répondre à ma demande de contact et de me
+                par RD Conseil Lean afin de répondre à ma demande de contact et de me
                 recontacter dans le cadre de la relation commerciale pouvant en découler.
                 Pour en savoir plus sur la gestion de vos données et exercer vos droits,
                 consultez notre{" "}

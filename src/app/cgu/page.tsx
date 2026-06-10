@@ -22,7 +22,7 @@ export default function CGUPage() {
       <h2>Responsabilité</h2>
 
       <p>
-        RD Lean Conseil s'efforce de maintenir les informations à jour mais ne
+        RD Conseil Lean s'efforce de maintenir les informations à jour mais ne
         garantit pas leur exactitude permanente.
       </p>
       <br/>

@@ -16,7 +16,7 @@ export default function MentionsLegalesPage() {
           <p className="text-gray-700 max-w-3xl">
             Conformément aux dispositions de la loi n°2004-575 du 21 juin 2004
             pour la confiance dans l'économie numérique, les informations
-            relatives à l'éditeur et à l'exploitation du site RD Lean Conseil
+            relatives à l'éditeur et à l'exploitation du site RD Conseil Lean
             sont précisées ci-dessous.
           </p>
         </div>
@@ -34,7 +34,7 @@ export default function MentionsLegalesPage() {
 
             <div className="space-y-2 text-gray-700">
               <p>
-                <strong>RD Lean Conseil</strong>
+                <strong>RD Conseil Lean</strong>
               </p>
 
               <p>
@@ -55,7 +55,7 @@ export default function MentionsLegalesPage() {
               </p>
 
               <p>
-                Email : contact@rd-lean-conseil.fr
+                Email : contact@rd-conseil-lean.fr
               </p>
 
               <p>
@@ -76,7 +76,7 @@ export default function MentionsLegalesPage() {
 
             <p className="text-gray-700">
               Le directeur de publication du site est Rémy Dumoulin,
-              représentant légal de RD Lean Conseil.
+              représentant légal de RD Conseil Lean.
             </p>
           </div>
 
@@ -114,7 +114,7 @@ export default function MentionsLegalesPage() {
             </h2>
 
             <p className="text-gray-700 leading-relaxed">
-              Le site RD Lean Conseil a pour objet de présenter les activités,
+              Le site RD Conseil Lean a pour objet de présenter les activités,
               prestations et domaines d'expertise de l'entreprise dans le
               domaine du conseil en amélioration continue, Lean management,
               performance industrielle, organisation et pilotage opérationnel.
@@ -137,7 +137,7 @@ export default function MentionsLegalesPage() {
             <p className="text-gray-700 leading-relaxed">
               Toute reproduction, représentation, modification, diffusion ou
               exploitation, totale ou partielle, sans autorisation écrite
-              préalable de RD Lean Conseil est interdite et susceptible de
+              préalable de RD Conseil Lean est interdite et susceptible de
               constituer une contrefaçon.
             </p>
           </div>
@@ -149,7 +149,7 @@ export default function MentionsLegalesPage() {
             </h2>
 
             <p className="text-gray-700 leading-relaxed mb-4">
-              RD Lean Conseil met tout en œuvre afin d'assurer l'exactitude des
+              RD Conseil Lean met tout en œuvre afin d'assurer l'exactitude des
               informations diffusées sur le site.
             </p>
 
@@ -239,7 +239,7 @@ export default function MentionsLegalesPage() {
 
             <div className="space-y-2">
               <p>
-                RD Lean Conseil
+                RD Conseil Lean
               </p>
 
               <p>
@@ -247,7 +247,7 @@ export default function MentionsLegalesPage() {
               </p>
 
               <p>
-                73190 Challes-les-Eaux
+                73190 Challes-les-Eaux, Savoie
               </p>
 
               <p>
@@ -255,7 +255,7 @@ export default function MentionsLegalesPage() {
               </p>
 
               <p>
-                contact@rd-lean-conseil.fr
+                contact@rd-conseil-lean.fr
               </p>
             </div>
           </div>
