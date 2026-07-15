@@ -55,7 +55,7 @@ export default function ContactPage() {
           {/* IMAGE */}
           <div className="relative w-full h-[400px] rounded-xl overflow-hidden shadow-lg">
             <Image
-              src="/image_ecoute.jpg"
+              src="/contact/image_ecoute.png"
               alt="contactez_nous"
               fill
               className="object-cover"
@@ -64,16 +64,16 @@ export default function ContactPage() {
 
           {/* TEXTE */}
           <div>
-            <h2 className="text-primary mb-4">
-              Vous souhaitez échanger sur un projet au sein de votre organisation ou bénéficier d’un accompagnement dans votre transformation ?
-            </h2>
-
             <h3 className="text-primary mb-4">
-              Remplissez le formulaire de contact ci-dessous, notre équipe reviendra vers vous rapidement pour répondre à toutes vos questions.
+              Vous souhaitez échanger sur un projet au sein de votre organisation ou bénéficier d’un accompagnement dans votre transformation ?
             </h3>
 
+            <h4 className="text-primary mb-4">
+              Remplissez le formulaire de contact ci-dessous, notre équipe reviendra vers vous rapidement pour répondre à toutes vos questions.
+            </h4>
+
             <p className="text-black">
-              Vous pouvez aussi joindre notre équipe par téléphone au  <strong>02 44 76 03 60</strong>.
+              Vous pouvez aussi joindre notre équipe par téléphone au  <strong>07 85 88 20 12</strong>.
             </p>
           </div>
         </div>
@@ -83,7 +83,7 @@ export default function ContactPage() {
       <section className="bg-primary py-16 px-6">
         <div className="max-w-4xl mx-auto text-white">
 
-          <h2 className="mb-8">Formulaire de contact</h2>
+          <h2 className="text-accent mb-8">Formulaire de contact</h2>
 
           <form onSubmit={handleSubmit} className="flex flex-col gap-4">
 
@@ -132,14 +132,29 @@ export default function ContactPage() {
             />
 
             {/* CONSENTEMENT RGPD */}
-            <label className="flex items-start gap-2 text-sm">
+            <label className="flex items-start gap-3 text-sm text-white/90">
               <input
                 type="checkbox"
+                required
+                className="mt-1"
                 onChange={(e) =>
                   setForm({ ...form, consent: e.target.checked })
                 }
               />
-              J’accepte que mes données soient utilisées pour être recontacté.
+
+              <span>
+                J'accepte que les informations saisies dans ce formulaire soient utilisées
+                par RD Conseil Lean afin de répondre à ma demande de contact et de me
+                recontacter dans le cadre de la relation commerciale pouvant en découler.
+                Pour en savoir plus sur la gestion de vos données et exercer vos droits,
+                consultez notre{" "}
+                <a
+                  href="/politique-confidentialite"
+                  className="text-accent underline"
+                >
+                  politique de confidentialité
+                </a>.
+              </span>
             </label>
 
             {/* ERREUR */}
