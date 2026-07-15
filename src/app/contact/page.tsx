@@ -3,6 +3,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function ContactPage() {
@@ -17,37 +18,42 @@ export default function ContactPage() {
   });
 
   const [error, setError] = useState("");
+  const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = async (e: any) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    // ✅ Validation simple
     if (form.email !== form.confirmEmail) {
-      return setError("Les emails ne correspondent pas");
+      return setError("Les adresses email ne correspondent pas.");
     }
 
     if (!form.consent) {
-      return setError("Vous devez accepter le traitement des données");
+      return setError("Merci d'accepter le traitement de vos données pour envoyer votre message.");
     }
 
     setError("");
+    setLoading(true);
 
     await fetch("/api/contact", {
       method: "POST",
       body: JSON.stringify(form),
     });
 
-    alert("Message envoyé !");
+    setLoading(false);
+    setSubmitted(true);
   };
 
   return (
     <>
       <Navbar />
 
+      {/* ── EN-TÊTE ───────────────────────────────────────────────────────── */}
       <div className="max-w-7xl mx-auto px-6 py-16">
 
-        {/* H1 */}
-        <h1 className="mb-12 text-left text-primary">Contact</h1>
+        <h1 className="mb-12 text-left text-primary">
+          Parlons de votre projet
+        </h1>
 
         {/* SECTION IMAGE + TEXTE */}
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -56,7 +62,7 @@ export default function ContactPage() {
           <div className="relative w-full h-[400px] rounded-xl overflow-hidden shadow-lg">
             <Image
               src="/contact/image_ecoute.png"
-              alt="contactez_nous"
+              alt="Consultant Lean Manufacturing à l'écoute de vos enjeux industriels"
               fill
               className="object-cover"
             />
@@ -64,107 +70,170 @@ export default function ContactPage() {
 
           {/* TEXTE */}
           <div>
-            <h3 className="text-primary mb-4">
-              Vous souhaitez échanger sur un projet au sein de votre organisation ou bénéficier d’un accompagnement dans votre transformation ?
-            </h3>
+            <h2 className="text-primary mb-6 text-2xl">
+              Un premier échange, sans engagement
+            </h2>
 
-            <h4 className="text-primary mb-4">
-              Remplissez le formulaire de contact ci-dessous, notre équipe reviendra vers vous rapidement pour répondre à toutes vos questions.
-            </h4>
-
-            <p className="text-black">
-              Vous pouvez aussi joindre notre équipe par téléphone au  <strong>07 85 88 20 12</strong>.
+            <p className="text-gray-700 mb-4 leading-relaxed">
+              Vous avez une problématique industrielle à résoudre, un projet
+              de transformation à structurer ou simplement envie d&apos;explorer
+              les pistes d&apos;amélioration disponibles dans votre organisation ?
             </p>
+
+            <p className="text-gray-700 mb-6 leading-relaxed">
+              Remplissez le formulaire ci-dessous ou contactez-moi directement.
+              Je reviens vers vous sous <strong>24h ouvrées</strong>.
+            </p>
+
+            {/* COORDONNÉES */}
+            <div className="space-y-3 mb-6">
+
+              <div className="flex items-center gap-3">
+                <span className="text-accent font-semibold">Tél.</span>
+                <a
+                  href="tel:+33785882012"
+                  className="text-gray-700 hover:text-accent transition"
+                >
+                  07 85 88 20 12
+                </a>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <span className="text-accent font-semibold">Email</span>
+                <a
+                  href="mailto:contact@rd-conseil-lean.fr"
+                  className="text-gray-700 hover:text-accent transition"
+                >
+                  contact@rd-conseil-lean.fr
+                </a>
+              </div>
+
+  
+              <div className="flex items-center gap-3">
+                <span className="text-accent font-semibold">LinkedIn</span>
+                <a
+                  href="https://www.linkedin.com/in/rémy-dumoulin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-700 hover:text-accent transition"
+                >
+                  Rémy Dumoulin
+                </a>
+              </div>
+
+            </div>
+
+            <p className="text-sm text-gray-500">
+              Basé en Savoie · Interventions en Auvergne-Rhône-Alpes et en France entière
+            </p>
+
           </div>
         </div>
       </div>
 
-      {/* FORMULAIRE FULL WIDTH */}
+      {/* ── FORMULAIRE ───────────────────────────────────────────────────── */}
       <section className="bg-primary py-16 px-6">
         <div className="max-w-4xl mx-auto text-white">
 
           <h2 className="text-accent mb-8">Formulaire de contact</h2>
 
-          <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+          {/* MESSAGE DE CONFIRMATION */}
+          {submitted ? (
+            <div className="bg-white/10 border border-accent/40 rounded-xl p-10 text-center">
+              <p className="text-accent text-2xl font-medium mb-4">
+                Message bien reçu !
+              </p>
+              <p className="text-white/80 leading-relaxed">
+                Merci pour votre message. Je reviens vers vous sous 24h ouvrées
+                pour échanger sur votre projet.
+              </p>
+            </div>
+          ) : (
+            <form onSubmit={handleSubmit} className="flex flex-col gap-4">
 
-            <input
-              className="p-3 rounded text-black"
-              placeholder="Nom"
-              required
-              onChange={(e) => setForm({ ...form, name: e.target.value })}
-            />
+              <div className="grid md:grid-cols-2 gap-4">
+                <input
+                  className="p-3 rounded text-black"
+                  placeholder="Votre nom et prénom *"
+                  required
+                  onChange={(e) => setForm({ ...form, name: e.target.value })}
+                />
+                <input
+                  className="p-3 rounded text-black"
+                  placeholder="Votre entreprise"
+                  onChange={(e) => setForm({ ...form, company: e.target.value })}
+                />
+              </div>
 
-            <input
-              type="email"
-              className="p-3 rounded text-black"
-              placeholder="Email"
-              required
-              onChange={(e) => setForm({ ...form, email: e.target.value })}
-            />
+              <div className="grid md:grid-cols-2 gap-4">
+                <input
+                  type="email"
+                  className="p-3 rounded text-black"
+                  placeholder="Votre adresse email *"
+                  required
+                  onChange={(e) => setForm({ ...form, email: e.target.value })}
+                />
+                <input
+                  type="email"
+                  className="p-3 rounded text-black"
+                  placeholder="Confirmez votre email *"
+                  required
+                  onChange={(e) => setForm({ ...form, confirmEmail: e.target.value })}
+                />
+              </div>
 
-            <input
-              type="email"
-              className="p-3 rounded text-black"
-              placeholder="Confirmez votre email"
-              required
-              onChange={(e) =>
-                setForm({ ...form, confirmEmail: e.target.value })
-              }
-            />
-
-            <input
-              className="p-3 rounded text-black"
-              placeholder="Téléphone"
-              onChange={(e) => setForm({ ...form, phone: e.target.value })}
-            />
-
-            <input
-              className="p-3 rounded text-black"
-              placeholder="Entreprise"
-              onChange={(e) => setForm({ ...form, company: e.target.value })}
-            />
-
-            <textarea
-              className="p-3 rounded text-black h-32"
-              placeholder="Votre besoin"
-              required
-              onChange={(e) => setForm({ ...form, message: e.target.value })}
-            />
-
-            {/* CONSENTEMENT RGPD */}
-            <label className="flex items-start gap-3 text-sm text-white/90">
               <input
-                type="checkbox"
-                required
-                className="mt-1"
-                onChange={(e) =>
-                  setForm({ ...form, consent: e.target.checked })
-                }
+                className="p-3 rounded text-black"
+                placeholder="Votre numéro de téléphone"
+                onChange={(e) => setForm({ ...form, phone: e.target.value })}
               />
 
-              <span>
-                J'accepte que les informations saisies dans ce formulaire soient utilisées
-                par RD Conseil Lean afin de répondre à ma demande de contact et de me
-                recontacter dans le cadre de la relation commerciale pouvant en découler.
-                Pour en savoir plus sur la gestion de vos données et exercer vos droits,
-                consultez notre{" "}
-                <a
-                  href="/politique-confidentialite"
-                  className="text-accent underline"
-                >
-                  politique de confidentialité
-                </a>.
-              </span>
-            </label>
+              <textarea
+                className="p-3 rounded text-black h-36"
+                placeholder="Décrivez votre besoin ou votre projet (contexte, enjeux, objectifs) *"
+                required
+                onChange={(e) => setForm({ ...form, message: e.target.value })}
+              />
 
-            {/* ERREUR */}
-            {error && <p className="text-red-300">{error}</p>}
+              {/* CONSENTEMENT RGPD */}
+              <label className="flex items-start gap-3 text-sm text-white/90">
+                <input
+                  type="checkbox"
+                  required
+                  className="mt-1 flex-shrink-0"
+                  onChange={(e) => setForm({ ...form, consent: e.target.checked })}
+                />
+                <span>
+                  J&apos;accepte que les informations saisies dans ce formulaire soient
+                  utilisées par RD Conseil Lean afin de répondre à ma demande et
+                  de me recontacter dans le cadre de la relation commerciale pouvant
+                  en découler. Pour en savoir plus sur la gestion de vos données et
+                  exercer vos droits, consultez notre{" "}
+                  <Link
+                    href="/politique-confidentialite"
+                    className="text-accent underline hover:opacity-80 transition"
+                  >
+                    politique de confidentialité
+                  </Link>.
+                </span>
+              </label>
 
-            <button className="bg-accent text-white py-3 rounded hover:opacity-90 transition">
-              Envoyer
-            </button>
+              {/* MESSAGE D'ERREUR */}
+              {error && (
+                <p className="text-red-300 text-sm">{error}</p>
+              )}
 
-          </form>
+              <button
+                type="submit"
+                disabled={loading}
+                className="bg-accent text-white py-3 rounded hover:opacity-90 transition disabled:opacity-60 disabled:cursor-not-allowed"
+              >
+                {loading ? "Envoi en cours..." : "Envoyer mon message"}
+              </button>
+
+            </form>
+          )}
+
         </div>
       </section>
 

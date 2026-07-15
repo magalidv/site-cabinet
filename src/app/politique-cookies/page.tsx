@@ -1,6 +1,10 @@
-// src/app/politique-cookies/page.tsx
-
 import LegalLayout from "@/components/LegalLayout";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Politique de cookies | RD Conseil Lean",
+  robots: { index: false, follow: false },
+};
 
 export default function CookiesPage() {
   return (
@@ -9,20 +13,36 @@ export default function CookiesPage() {
       <h2>Qu'est-ce qu'un cookie ?</h2>
 
       <p>
-        Un cookie est un petit fichier stocké sur votre appareil lors de votre navigation.
+        Un cookie est un petit fichier texte déposé sur votre appareil
+        lors de la visite d'un site web. Il permet de mémoriser des
+        informations de navigation.
       </p>
-      <br/>
-      <h2>Cookies utilisés</h2>
+
+      <h2>Cookies utilisés sur ce site</h2>
 
       <ul>
-        <li>Cookies techniques nécessaires au fonctionnement du site</li>
-        <li>Cookies statistiques si Google Analytics est activé</li>
+        <li>
+          <strong>Cookies techniques</strong> (nécessaires) :
+          indispensables au bon fonctionnement du site. Ils ne
+          collectent aucune donnée personnelle.
+        </li>
+
+        <li>
+          <strong>Cookies statistiques</strong> (Google Analytics) :
+          permettent de mesurer l'audience du site de manière anonyme
+          (pages visitées, durée de session, source de trafic). Ces
+          données sont anonymisées et ne permettent pas de vous
+          identifier personnellement.
+        </li>
       </ul>
-      <br/>
-      <h2>Gestion des cookies</h2>
+
+      <h2>Gestion de vos préférences</h2>
 
       <p>
-        Vous pouvez accepter ou refuser les cookies depuis votre navigateur.
+        Vous pouvez à tout moment accepter ou refuser les cookies
+        non essentiels depuis les paramètres de votre navigateur.
+        Le refus des cookies statistiques n'affecte pas le
+        fonctionnement du site.
       </p>
 
     </LegalLayout>
