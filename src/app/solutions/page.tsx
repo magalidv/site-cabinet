@@ -66,7 +66,7 @@ export default function SolutionsPage() {
           "Équipes plus réactives, impliquées et responsabilisées",
         ],
         outro:
-          "Un pilotage quotidien bien construit est le levier le plus durable de la performance industrielle.",
+          "Un pilotage quotidien maîtrisé est le levier le plus durable de la performance industrielle.",
       },
     },
 
@@ -86,7 +86,7 @@ export default function SolutionsPage() {
           "Culture d'amélioration continue ancrée dans les pratiques quotidiennes",
         ],
         outro:
-          "La culture Lean est ce qui fait tenir les résultats dans le temps, bien après la fin de la mission.",
+          "La culture Lean est ce qui fait tenir les résultats dans le temps, bien après la mission.",
       },
     },
 
@@ -126,7 +126,7 @@ export default function SolutionsPage() {
           "Flux de production plus fluides et plus lisibles",
         ],
         outro:
-          "Une implantation bien conçue génère des gains de productivité durables, sans investissement matériel.",
+          "Une implantation bien conçue génère des gains durables, sans investissement matériel.",
       },
     },
 
@@ -166,7 +166,7 @@ export default function SolutionsPage() {
           "Pilotage plus fluide et moins de stress opérationnel",
         ],
         outro:
-          "Le pilotage en flux tirés est l'un des leviers les plus efficaces pour reprendre le contrôle de vos flux complexes.",
+          "Le pilotage en flux tirés est un levier efficace pour reprendre le contrôle de vos flux complexes.",
       },
     },
   ];
