@@ -8,7 +8,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Le cabinet – Consultant Lean Management indépendant en Savoie",
   description:
-    "10 ans d'expérience industrielle terrain : ingénieur production, supply chain, directeur amélioration continue. RD Conseil Lean accompagne les PME et ETI en Lean Manufacturing, en Auvergne-Rhône-Alpes et en France.",
+    "10 ans d'expérience industrielle terrain : ingénieur production, supply chain, directeur amélioration continue. RD Conseil Lean accompagne les PME et ETI en Lean Manufacturing, en Auvergne-Rhône-Alpes.",
 };
 
 export default function AboutPage() {
