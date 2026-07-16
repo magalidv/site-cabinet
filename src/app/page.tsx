@@ -105,7 +105,7 @@ export default function Home() {
               RD Conseil Lean est un cabinet de conseil indépendant spécialisé
               en Lean Management et excellence opérationnelle. Basé en Savoie,
               j&apos;interviens auprès de PME et ETI industrielles en
-              Auvergne-Rhône-Alpes et sur l&apos;ensemble du territoire national.
+              Auvergne-Rhône-Alpes.
             </p>
 
             <p className="mb-6 text-gray-700">
@@ -373,8 +373,8 @@ export default function Home() {
             </p>
 
             <p className="text-gray-700 mb-8">
-              J&apos;interviens en Savoie, en Auvergne-Rhône-Alpes et sur toute la France.
-              Premier échange sans engagement — réponse sous 24h.
+              J&apos;interviens en Savoie, en Auvergne-Rhône-Alpes.
+              Premier échange sans engagement — réponse sous 48h.
             </p>
 
             <Link
