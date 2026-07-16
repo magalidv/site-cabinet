@@ -82,7 +82,7 @@ export default function ContactPage() {
 
             <p className="text-gray-700 mb-6 leading-relaxed">
               Remplissez le formulaire ci-dessous ou contactez-moi directement.
-              Je reviens vers vous sous <strong>24h ouvrées</strong>.
+              Je reviens vers vous sous <strong>48h ouvrées</strong>.
             </p>
 
             {/* COORDONNÉES */}
@@ -124,7 +124,7 @@ export default function ContactPage() {
             </div>
 
             <p className="text-sm text-gray-500">
-              Basé en Savoie · Interventions en Auvergne-Rhône-Alpes et en France entière
+              Basé en Savoie · Interventions en Auvergne-Rhône-Alpes
             </p>
 
           </div>
