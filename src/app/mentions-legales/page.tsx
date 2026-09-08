@@ -36,7 +36,7 @@ export default function MentionsLegalesPage() {
                 <p>Adresse : 275 avenue des Thermes, 73190 Challes-les-Eaux, France</p>
                 <p>Téléphone : 07 85 88 20 12</p>
                 <p>Email : contact@rd-conseil-lean.fr</p>
-                <p>SIRET : 134 567 010 20120</p>
+                <p>SIRET : 109 184 150 00018</p>
                 {/* ⚠️ À compléter avec votre numéro de TVA intracommunautaire
                     lorsqu'il vous sera attribué, ou supprimer cette ligne
                     si vous n'êtes pas assujetti à la TVA. */}
