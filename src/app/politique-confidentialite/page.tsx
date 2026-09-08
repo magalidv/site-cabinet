@@ -16,7 +16,7 @@ export default function PrivacyPage() {
         Contact : contact@rd-conseil-lean.fr — 07 85 88 20 12.
       </p>
       
-      </br>
+      <br/>
 
       <h2>2. Données collectées</h2>
 
@@ -38,7 +38,7 @@ export default function PrivacyPage() {
         Aucune donnée personnelle identifiable n'est collectée via cet outil.
       </p>
       
-      </br>
+      <br/>
 
       <h2>3. Finalité du traitement</h2>
 
@@ -50,7 +50,7 @@ export default function PrivacyPage() {
         <li>Améliorer le site (données statistiques anonymes)</li>
       </ul>
       
-      </br>
+      <br/>
 
       <h2>4. Base légale</h2>
 
@@ -60,7 +60,7 @@ export default function PrivacyPage() {
         ce consentement à tout moment.
       </p>
       
-      </br>
+      <br/>
 
       <h2>5. Durée de conservation</h2>
 
@@ -69,7 +69,7 @@ export default function PrivacyPage() {
         maximale de 3 ans à compter de votre dernière prise de contact.
       </p>
       
-      </br>
+      <br/>
 
       <h2>6. Destinataires des données</h2>
 
@@ -79,7 +79,7 @@ export default function PrivacyPage() {
         cadre du traitement de votre demande.
       </p>
       
-      </br>
+      <br/>
 
       <h2>7. Vos droits</h2>
 
@@ -99,7 +99,7 @@ export default function PrivacyPage() {
         auprès de la CNIL (www.cnil.fr).
       </p>
       
-      </br>
+      <br/>
 
     </LegalLayout>
   );
