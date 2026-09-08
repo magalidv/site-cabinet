@@ -373,7 +373,7 @@ export default function Home() {
             </p>
 
             <p className="text-gray-700 mb-8">
-              J&apos;interviens en Savoie, en Auvergne-Rhône-Alpes.
+              Basé en Savoie, j&apos;interviens dans toute la région Auvergne-Rhône-Alpes.
               Premier échange sans engagement — réponse sous 48h.
             </p>
 
