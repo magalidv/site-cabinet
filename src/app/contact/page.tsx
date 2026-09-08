@@ -144,7 +144,7 @@ export default function ContactPage() {
                 Message bien reçu !
               </p>
               <p className="text-white/80 leading-relaxed">
-                Merci pour votre message. Je reviens vers vous sous 24h ouvrées
+                Merci pour votre message. Je reviens vers vous sous 48h ouvrées
                 pour échanger sur votre projet.
               </p>
             </div>

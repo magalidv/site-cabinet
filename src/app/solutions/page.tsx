@@ -166,7 +166,7 @@ export default function SolutionsPage() {
           "Pilotage plus fluide et moins de stress opérationnel",
         ],
         outro:
-          "Le pilotage en flux tirés est un levier efficace pour reprendre le contrôle de vos flux complexes.",
+          "Le pilotage en flux tirés est un levier efficace pour reprendre le contrôle de flux complexes.",
       },
     },
   ];
