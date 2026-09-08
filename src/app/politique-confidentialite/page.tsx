@@ -12,7 +12,7 @@ export default function PrivacyPage() {
 
       <h2>1. Responsable du traitement</h2>
       <p>
-        RD Conseil Lean, Entrepreneur individuel - Rémy Dumoulin.
+        RD Conseil Lean, Entrepreneur individuel - Rémy Dumoulin.<br>
         Contact : contact@rd-conseil-lean.fr — 07 85 88 20 12.
       </p>
       
