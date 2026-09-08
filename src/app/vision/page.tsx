@@ -46,7 +46,7 @@ export default function VisionPage() {
 
             <p className="text-gray-700 mb-6">
               Ma conviction : <strong className="text-accent">un outil Lean sans changement
-              de pratiques ne génère pas de résultats durables.</strong> Le 5S qui tient
+              de pratiques ne génère pas de résultats durables. </strong> Le 5S qui tient
               six mois puis disparaît, le tableau de bord que personne ne regarde,
               le chantier Kaizen dont les actions ne sont jamais clôturées — ces
               échecs ont une cause commune : l&apos;outil a été déployé sans que

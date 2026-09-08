@@ -157,7 +157,7 @@ export default function SolutionsPage() {
         "Fluidifier pour maîtriser\n\nMise en place de systèmes de pilotage adaptés (CONWIP, Kanban) pour structurer vos flux maintenance ou sous-traitance et réduire les encours et les délais.",
       detail: {
         intro:
-          "J'analyse vos flux de maintenance et de sous-traitance pour mettre en place des systèmes de pilotage en flux tirés (CONWIP, Kanban) qui réduisent les encours et améliorent la visibilité.",
+          "J'analyse les flux de maintenance et de sous-traitance pour déployer des systèmes de pilotage en flux tirés (CONWIP, Kanban), réduire les encours et améliorer la visibilité.",
         text: "Ce que vous obtenez :",
         list: [
           "Réduction des encours et des temps d'attente entre étapes",

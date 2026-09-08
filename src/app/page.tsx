@@ -373,7 +373,6 @@ export default function Home() {
             </p>
 
             <p className="text-gray-700 mb-8">
-              J&apos;interviens en Savoie, en Auvergne-Rhône-Alpes.
               Premier échange sans engagement — réponse sous 48h.
             </p>
 

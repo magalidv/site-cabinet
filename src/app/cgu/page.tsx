@@ -15,7 +15,7 @@ export default function CGUPage() {
       <p>
         Les présentes Conditions Générales d'Utilisation (CGU)
         définissent les modalités d'accès et d'utilisation du site
-        rd-conseil-lean.fr, édité par RD Conseil Lean (EURL),
+        rd-conseil-lean.fr, édité par RD Conseil Lean,
         représentée par Rémy Dumoulin.
       </p>
       
