@@ -39,7 +39,7 @@ export default function Navbar() {
             href="/vision"
             className="px-4 py-2 rounded hover:bg-light transition"
           >
-            Notre vision
+            Ma vision
           </Link>
 
           <Link
