@@ -19,7 +19,7 @@ export default function CGUPage() {
         représentée par Rémy Dumoulin.
       </p>
       
-      </br>
+      <br/>
 
       <h2>2. Accès au site</h2>
 
@@ -30,7 +30,7 @@ export default function CGUPage() {
         site à tout moment, sans préavis.
       </p>
       
-      </br>
+      <br/>
 
       <h2>3. Utilisation du site</h2>
 
@@ -40,7 +40,7 @@ export default function CGUPage() {
         contraire à la loi est interdite.
       </p>
       
-      </br>
+      <br/>
 
       <h2>4. Responsabilité</h2>
 
@@ -51,7 +51,7 @@ export default function CGUPage() {
         site sous sa propre responsabilité.
       </p>
       
-      </br>
+      <br/>
 
       <h2>5. Propriété intellectuelle</h2>
 
@@ -61,7 +61,7 @@ export default function CGUPage() {
         interdite. Voir les mentions légales pour plus de détails.
       </p>
       
-      </br>
+      <br/>
 
       <h2>6. Droit applicable</h2>
 
@@ -71,7 +71,7 @@ export default function CGUPage() {
         compétentes.
       </p>
       
-      </br>
+      <br/>
 
       <h2>7. Modification des CGU</h2>
 
@@ -81,7 +81,7 @@ export default function CGUPage() {
         publication sur le site.
       </p>
       
-      </br>
+      <br/>
 
     </LegalLayout>
   );
