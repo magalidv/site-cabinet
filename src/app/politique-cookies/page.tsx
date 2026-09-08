@@ -18,7 +18,7 @@ export default function CookiesPage() {
         informations de navigation.
       </p>
       
-      </br>
+      <br/>
 
       <h2>Cookies utilisés sur ce site</h2>
 
@@ -38,7 +38,7 @@ export default function CookiesPage() {
         </li>
       </ul>
       
-      </br>
+      <br/>
 
       <h2>Gestion de vos préférences</h2>
 
