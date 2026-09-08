@@ -163,7 +163,7 @@ export default function AboutPage() {
             </div>
 
             <p className="text-gray-700">
-              J&apos;interviens auprès de PME et ETI industrielles en Savoie,
+              Basé en Savoie, j&apos;interviens auprès de PME et ETI
               en Auvergne-Rhône-Alpes.
             </p>
           </div>
