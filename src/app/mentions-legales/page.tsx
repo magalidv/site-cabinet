@@ -31,7 +31,7 @@ export default function MentionsLegalesPage() {
               <h2 className="text-primary mb-4">1. Éditeur du site</h2>
               <div className="space-y-2 text-gray-700">
                 <p><strong>RD Conseil Lean</strong></p>
-                <p>Société à responsabilité limitée unipersonnelle (EURL)</p>
+                <p>Entrepreneur individuel</p>
                 <p>Directeur de publication : <strong>Rémy Dumoulin</strong></p>
                 <p>Adresse : 275 avenue des Thermes, 73190 Challes-les-Eaux, France</p>
                 <p>Téléphone : 07 85 88 20 12</p>
