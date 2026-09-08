@@ -17,6 +17,8 @@ export default function CookiesPage() {
         lors de la visite d'un site web. Il permet de mémoriser des
         informations de navigation.
       </p>
+      
+      <br/>
 
       <h2>Cookies utilisés sur ce site</h2>
 
@@ -35,6 +37,8 @@ export default function CookiesPage() {
           identifier personnellement.
         </li>
       </ul>
+      
+      <br/>
 
       <h2>Gestion de vos préférences</h2>
 

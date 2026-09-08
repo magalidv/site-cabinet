@@ -18,6 +18,8 @@ export default function CGUPage() {
         rd-conseil-lean.fr, édité par RD Conseil Lean (EURL),
         représentée par Rémy Dumoulin.
       </p>
+      
+      <br/>
 
       <h2>2. Accès au site</h2>
 
@@ -27,6 +29,8 @@ export default function CGUPage() {
         le droit de modifier, suspendre ou interrompre l'accès au
         site à tout moment, sans préavis.
       </p>
+      
+      <br/>
 
       <h2>3. Utilisation du site</h2>
 
@@ -35,6 +39,8 @@ export default function CGUPage() {
         non commercial. Toute utilisation frauduleuse, abusive ou
         contraire à la loi est interdite.
       </p>
+      
+      <br/>
 
       <h2>4. Responsabilité</h2>
 
@@ -44,6 +50,8 @@ export default function CGUPage() {
         exhaustivité ni leur permanence. L'utilisateur utilise le
         site sous sa propre responsabilité.
       </p>
+      
+      <br/>
 
       <h2>5. Propriété intellectuelle</h2>
 
@@ -52,6 +60,8 @@ export default function CGUPage() {
         propriété intellectuelle. Toute reproduction non autorisée est
         interdite. Voir les mentions légales pour plus de détails.
       </p>
+      
+      <br/>
 
       <h2>6. Droit applicable</h2>
 
@@ -60,6 +70,8 @@ export default function CGUPage() {
         Tout litige sera soumis aux juridictions françaises
         compétentes.
       </p>
+      
+      <br/>
 
       <h2>7. Modification des CGU</h2>
 
@@ -68,6 +80,8 @@ export default function CGUPage() {
         CGU à tout moment. Les modifications prennent effet dès leur
         publication sur le site.
       </p>
+      
+      <br/>
 
     </LegalLayout>
   );
